@@ -1,0 +1,20 @@
+<% books.map((book) => { %>
+<tr>
+  <th scope="row"><%= book.id %></th>
+  <td><%= book.name %></td>
+  <td><%= book.author %></td>
+  <td><%= book.year_release %></td>
+  <td><div class="dropdown">
+    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+      <%= book.status %>
+    </a>
+  
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" onclick='updateBook(<%= book.id %>, "Want")'>Want</a></li>
+      <li><a class="dropdown-item" onclick='updateBook(<%= book.id %>, "Reading")'>Reading</a></li>
+      <li><a class="dropdown-item" onclick='updateBook(<%= book.id %>, "Complete")'>Complete</a></li>
+    </ul>
+  </div></td>
+  <td><button type="button" class="btn btn-danger" onclick='deleteBook(<%= book.id %>)'>Delete</button></td>
+</tr>
+<% }) %>

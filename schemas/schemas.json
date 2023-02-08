@@ -1,0 +1,70 @@
+{
+  "Book": {
+    "type": "object",
+    "title": "Book",
+    "required": [
+      "id",
+      "name",
+      "author",
+      "year_release",
+      "status",
+      "createdAt",
+      "updatedAt"
+    ],
+    "properties": {
+      "id": {
+        "type": "integer",
+        "default": 0,
+        "title": "The id Schema",
+        "examples": [1]
+      },
+      "name": {
+        "type": "string",
+        "default": "",
+        "title": "The name Schema",
+        "examples": ["Name"]
+      },
+      "author": {
+        "type": "string",
+        "default": "",
+        "title": "The author Schema",
+        "examples": ["Author"]
+      },
+      "year_release": {
+        "type": "integer",
+        "default": 0,
+        "title": "The year_release Schema",
+        "examples": [1212]
+      },
+      "status": {
+        "type": "string",
+        "default": "",
+        "title": "The status Schema",
+        "examples": ["Want"]
+      },
+      "createdAt": {
+        "type": "string",
+        "default": "",
+        "title": "The createdAt Schema",
+        "examples": ["2023-02-09 04:18:00.634+07"]
+      },
+      "updatedAt": {
+        "type": "string",
+        "default": "",
+        "title": "The updatedAt Schema",
+        "examples": ["2023-02-09 04:18:00.634+07"]
+      }
+    },
+    "examples": [
+      {
+        "id": 1,
+        "name": "Name",
+        "author": "Author",
+        "year_release": 1212,
+        "status": "Reading",
+        "createdAt": "2023-02-09 04:18:00.634+07",
+        "updatedAt": "2023-02-09 04:18:00.634+07"
+      }
+    ]
+  }
+}
